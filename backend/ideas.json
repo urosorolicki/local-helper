@@ -1,98 +1,17 @@
 [
-  {
-    "id": 1,
-    "title": "Šetnja po Kalemegdanu",
-    "description": "Prošetaj tvrđavom i uživaj u pogledu na ušće Save u Dunav.",
-    "type": "outdoor",
-    "weather": "sunny",
-    "link": "https://goo.gl/maps/YQKc5v9v2ZP2"
-  },
-  {
-    "id": 2,
-    "title": "Poseta Muzeju savremene umetnosti",
-    "description": "Otkrij izložbe savremene umetnosti na Ušću.",
-    "type": "culture",
-    "weather": "any",
-    "link": "https://msub.org.rs/"
-  },
-  {
-    "id": 3,
-    "title": "Kafa u Skadarliji",
-    "description": "Popij kafu u boemskoj četvrti Beograda.",
-    "type": "food",
-    "weather": "any",
-    "link": "https://goo.gl/maps/3Qk8v9v2ZP2"
-  },
-  {
-    "id": 4,
-    "title": "Bioskop pod zvezdama",
-    "description": "Pogledaj film na otvorenom tokom letnjih večeri.",
-    "type": "outdoor",
-    "weather": "sunny",
-    "link": "https://www.kombankdvorana.rs/"
-  },
-  {
-    "id": 5,
-    "title": "Igraonica za decu",
-    "description": "Povedi porodicu u neku od igraonica u gradu.",
-    "type": "family",
-    "weather": "any",
-    "link": "https://www.decijeigraonice.rs/"
-  },
-  {
-    "id": 6,
-    "title": "Obilazak ZOO vrta",
-    "description": "Poseti beogradski zoološki vrt sa porodicom.",
-    "type": "family",
-    "weather": "sunny",
-    "link": "https://www.beozoovrt.izlog.org/"
-  },
-  {
-    "id": 7,
-    "title": "Escape room avantura",
-    "description": "Reši zagonetke sa prijateljima u escape room-u.",
-    "type": "indoor",
-    "weather": "rainy",
-    "link": "https://escaperoombeograd.com/"
-  },
-  {
-    "id": 8,
-    "title": "Degustacija vina na Dorćolu",
-    "description": "Probaj lokalna vina u vinskom baru.",
-    "type": "food",
-    "weather": "any",
-    "link": "https://goo.gl/maps/4Qk8v9v2ZP2"
-  },
-  {
-    "id": 9,
-    "title": "Planinarenje na Avali",
-    "description": "Provedi dan u prirodi i popni se na Avalski toranj.",
-    "type": "outdoor",
-    "weather": "sunny",
-    "link": "https://goo.gl/maps/5Qk8v9v2ZP2"
-  },
-  {
-    "id": 10,
-    "title": "Radionica keramike",
-    "description": "Napravi svoj unikatni suvenir na kreativnoj radionici.",
-    "type": "indoor",
-    "weather": "rainy",
-    "link": "https://www.keramikaradionica.rs/"
-  },
-  {
-    "id": 11,
-    "title": "Obilazak Narodnog muzeja",
-    "description": "Upoznaj se sa istorijom i umetnošću Srbije.",
-    "type": "culture",
-    "weather": "any",
-    "link": "https://www.narodnimuzej.rs/"
-  },
-  {
-    "id": 12,
-    "title": "Brunch na Savamali",
-    "description": "Uživaj u modernim restoranima uz reku.",
-    "type": "food",
-    "weather": "any",
-    "link": "https://goo.gl/maps/6Qk8v9v2ZP2"
-  }
+  {"id": 1, "title": "Šetnja po Kalemegdanu", "description": "Prošetaj tvrđavom i uživaj u pogledu na ušće Save u Dunav.", "type": "outdoor", "weather": "sunny", "link": "https://goo.gl/maps/YQKc5v9v2ZP2", "city": "Beograd"},
+  {"id": 2, "title": "Poseta Muzeju savremene umetnosti", "description": "Otkrij izložbe savremene umetnosti na Ušću.", "type": "culture", "weather": "any", "link": "https://msub.org.rs/", "city": "Beograd"},
+  {"id": 3, "title": "Kafa u Skadarliji", "description": "Popij kafu u boemskoj četvrti Beograda.", "type": "food", "weather": "any", "link": "https://goo.gl/maps/3Qk8v9v2ZP2", "city": "Beograd"},
+  {"id": 4, "title": "Bioskop pod zvezdama", "description": "Pogledaj film na otvorenom tokom letnjih večeri.", "type": "outdoor", "weather": "sunny", "link": "https://www.kombankdvorana.rs/", "city": "Beograd"},
+  {"id": 5, "title": "Igraonica za decu", "description": "Povedi porodicu u neku od igraonica u gradu.", "type": "family", "weather": "any", "link": "https://www.decijeigraonice.rs/", "city": "Beograd"},
+  {"id": 6, "title": "Obilazak ZOO vrta", "description": "Poseti beogradski zoološki vrt sa porodicom.", "type": "family", "weather": "sunny", "link": "https://www.beozoovrt.izlog.org/", "city": "Beograd"},
+  {"id": 7, "title": "Escape room avantura", "description": "Reši zagonetke sa prijateljima u escape room-u.", "type": "indoor", "weather": "rainy", "link": "https://escaperoombeograd.com/", "city": "Beograd"},
+  {"id": 8, "title": "Degustacija vina na Dorćolu", "description": "Probaj lokalna vina u vinskom baru.", "type": "food", "weather": "any", "link": "https://goo.gl/maps/4Qk8v9v2ZP2", "city": "Beograd"},
+  {"id": 9, "title": "Planinarenje na Avali", "description": "Provedi dan u prirodi i popni se na Avalski toranj.", "type": "outdoor", "weather": "sunny", "link": "https://goo.gl/maps/5Qk8v9v2ZP2", "city": "Beograd"},
+  {"id": 10, "title": "Radionica keramike", "description": "Napravi svoj unikatni suvenir na kreativnoj radionici.", "type": "indoor", "weather": "rainy", "link": "https://www.keramikaradionica.rs/", "city": "Beograd"},
+  {"id": 11, "title": "Obilazak Narodnog muzeja", "description": "Upoznaj se sa istorijom i umetnošću Srbije.", "type": "culture", "weather": "any", "link": "https://www.narodnimuzej.rs/", "city": "Beograd"},
+  {"id": 12, "title": "Brunch na Savamali", "description": "Uživaj u modernim restoranima uz reku.", "type": "food", "weather": "any", "link": "https://goo.gl/maps/6Qk8v9v2ZP2", "city": "Beograd"},
+  {"id": 13, "title": "Šetnja Petrovaradinskom tvrđavom", "description": "Istraži znamenitosti Petrovaradina.", "type": "outdoor", "weather": "sunny", "link": "https://goo.gl/maps/novisad1", "city": "Novi Sad"},
+  {"id": 14, "title": "Doručak na keju u Novom Sadu", "description": "Uživaj u doručku pored Dunava.", "type": "food", "weather": "any", "link": "https://goo.gl/maps/novisad2", "city": "Novi Sad"},
+  {"id": 15, "title": "Obilazak Subotičke sinagoge", "description": "Poseti jednu od najlepših sinagoga u regionu.", "type": "culture", "weather": "any", "link": "https://goo.gl/maps/subotica1", "city": "Subotica"}
 ]

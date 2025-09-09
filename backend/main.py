@@ -1,3 +1,4 @@
+
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 import json
@@ -19,10 +20,18 @@ with open("ideas.json", encoding="utf-8") as f:
     ideas = json.load(f)
 
 @app.get("/ideas")
-def get_ideas(weather: Optional[str] = Query(None, description="Weather filter: sunny, rainy, any")):
+def get_ideas(
+    weather: Optional[str] = Query(None, description="Weather filter: sunny, rainy, any"),
+    city: Optional[str] = Query(None, description="City filter (default: Beograd)"),
+    type: Optional[str] = Query(None, description="Type filter (outdoor, indoor, food, family, culture)")
+):
     filtered = ideas
+    if city:
+        filtered = [i for i in filtered if i.get("city", "Beograd").lower() == city.lower()]
     if weather:
-        filtered = [i for i in ideas if i["weather"] == weather or i["weather"] == "any"]
+        filtered = [i for i in filtered if i["weather"] == weather or i["weather"] == "any"]
+    if type:
+        filtered = [i for i in filtered if i["type"] == type]
     if len(filtered) <= 3:
         return filtered
     return random.sample(filtered, 3)

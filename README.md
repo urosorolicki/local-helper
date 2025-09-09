@@ -1,3 +1,5 @@
+![Vercel Status](https://vercel.com/api/pipelines/github.com/urosorolicki/local-helper/badge)
+
 # Local Helper
 
 Aplikacija za dnevne ideje za aktivnosti u Beogradu (ili drugom gradu) sa opcijom donacije.
