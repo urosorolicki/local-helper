@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Loader from "./Loader";
 
-const BACKEND_URL = "<OVDE_UNESI_BACKEND_URL>"; // npr. https://local-helper-backend.vercel.app
+const BACKEND_URL = "https://local-helper.onrender.com";
 const CITIES = ["Beograd", "Novi Sad", "Subotica"];
 const TYPES = ["outdoor", "indoor", "food", "family", "culture"];
 
