@@ -1,9 +1,9 @@
-
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 import json
 import random
 from typing import Optional
+import os
 
 app = FastAPI()
 
@@ -16,10 +16,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-with open("ideas.json", encoding="utf-8") as f:
+# Find ideas.json relative to this file
+IDEAS_PATH = os.path.join(os.path.dirname(__file__), "..", "ideas.json")
+with open(IDEAS_PATH, encoding="utf-8") as f:
     ideas = json.load(f)
 
-@app.get("/ideas")
+@app.get("/api/ideas")
 def get_ideas(
     weather: Optional[str] = Query(None, description="Weather filter: sunny, rainy, any"),
     city: Optional[str] = Query(None, description="City filter (default: Beograd)"),
@@ -35,3 +37,5 @@ def get_ideas(
     if len(filtered) <= 3:
         return filtered
     return random.sample(filtered, 3)
+
+handler = app  # Vercel entrypoint
