@@ -68,6 +68,7 @@ function App() {
     <>
       {/* Google Fonts */}
       <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet" />
+      {/* Animated glassmorphism background */}
       <div style={{
         minHeight: "100vh",
         width: "100vw",
@@ -75,23 +76,57 @@ function App() {
         left: 0,
         top: 0,
         zIndex: -1,
-        background: "linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%)"
+        background: "linear-gradient(120deg, #f8ffae 0%, #43c6ac 40%, #38a3d1 100%)",
+        animation: "gradientMove 12s ease-in-out infinite alternate"
       }} />
+      <style>{`
+        @keyframes gradientMove {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 100% 50%; }
+        }
+      `}</style>
       <div style={{
-        maxWidth: 540,
+        maxWidth: 600,
         margin: "48px auto 32px auto",
         fontFamily: "'Fredoka', 'Nunito', 'Comic Sans MS', 'Comic Sans', cursive, sans-serif",
-        background: "rgba(255,255,255,0.85)",
-        borderRadius: 22,
-        boxShadow: "0 8px 40px 0 #0002",
-        padding: 36,
+        background: "rgba(255,255,255,0.82)",
+        borderRadius: 32,
+        boxShadow: "0 12px 48px 0 #38a3d144, 0 2px 12px #fff7",
+        padding: 44,
         position: "relative",
-        backdropFilter: "blur(2px)",
-        border: "1.5px solid #fff7"
+        backdropFilter: "blur(6px)",
+        border: "2.5px solid #fff7",
+        transition: "box-shadow 0.2s"
       }}>
-  <img src="/logo.png" alt="gdedaidem.com logo" style={{ width: 110, display: "block", margin: "0 auto 18px auto", borderRadius: 20, boxShadow: "0 2px 12px #0002" }} />
-    <h1 style={{ textAlign: "center", fontWeight: 900, fontSize: 38, letterSpacing: 1, color: "#222" }}>gdedaidem.com</h1>
-  <p style={{ textAlign: "center", fontSize: 18, color: "#444", marginBottom: 28 }}>🎉 Gde da idem? Šta da radim u Beogradu? Svakog dana 3 najbolje ideje! 🎉</p>
+  <img src="/logo.png" alt="gdedaidem.com logo" style={{ width: 120, display: "block", margin: "0 auto 18px auto", borderRadius: 24, boxShadow: "0 4px 18px #38a3d122" }} />
+    <h1 style={{ textAlign: "center", fontWeight: 900, fontSize: 44, letterSpacing: 1, color: "#1a237e", textShadow: "0 2px 12px #fff8" }}>Gde da idem?</h1>
+  <p style={{ textAlign: "center", fontSize: 20, color: "#1976d2", marginBottom: 28, fontWeight: 700, letterSpacing: 0.5 }}>🎉 Najbolje dnevne ideje za Beograd i Srbiju! 🎉</p>
+  <div style={{
+    background: "linear-gradient(90deg, #f8ffaecc 60%, #43c6ac33 100%)",
+    borderRadius: 18,
+    padding: "18px 22px",
+    marginBottom: 28,
+    boxShadow: "0 2px 12px #43c6ac22",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  }}>
+    <h2 style={{ fontWeight: 900, fontSize: 24, color: "#388e3c", margin: 0, marginBottom: 8 }}>Gde sa decom za vikend u Beogradu?</h2>
+    <p style={{ color: "#444", fontSize: 16, margin: 0, marginBottom: 10 }}>Izdvajamo preporuke za porodične vikende i aktivnosti sa klincima.</p>
+    <button onClick={() => { setType("family"); setCity("Beograd"); }} style={{
+      background: "linear-gradient(90deg, #43c6ac 60%, #f8ffae 100%)",
+      color: "#1a237e",
+      fontWeight: 800,
+      fontSize: 17,
+      border: "none",
+      borderRadius: 12,
+      padding: "10px 28px",
+      boxShadow: "0 2px 8px #43c6ac33",
+      cursor: "pointer",
+      marginTop: 6,
+      transition: "background 0.2s"
+    }}>Prikaži ideje za decu u Beogradu</button>
+  </div>
         <div style={{
           display: "flex",
           gap: 16,
